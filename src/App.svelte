@@ -245,10 +245,8 @@ import {onMount} from 'svelte';
 					}
 				}
 			}
-			if (!gameOver) {
-				moveDown();
-				play(tickSpeed);
-			}
+			moveDown();
+			play(tickSpeed);
 
 		} , tickSpeed )
 	}

@@ -362,19 +362,19 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[31] = list[i];
+    	child_ctx[32] = list[i];
     	child_ctx[7] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[33] = list[i];
+    	child_ctx[34] = list[i];
     	child_ctx[8] = i;
     	return child_ctx;
     }
 
-    // (308:36) 
+    // (314:36) 
     function create_if_block_7(ctx) {
     	let div;
 
@@ -382,7 +382,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full orange svelte-1gmtuxg");
-    			add_location(div, file, 308, 9, 6548);
+    			add_location(div, file, 314, 9, 6808);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -396,14 +396,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(308:36) ",
+    		source: "(314:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:36) 
+    // (312:36) 
     function create_if_block_6(ctx) {
     	let div;
 
@@ -411,7 +411,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full blue svelte-1gmtuxg");
-    			add_location(div, file, 306, 9, 6467);
+    			add_location(div, file, 312, 9, 6727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -425,14 +425,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(306:36) ",
+    		source: "(312:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (304:36) 
+    // (310:36) 
     function create_if_block_5(ctx) {
     	let div;
 
@@ -440,7 +440,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full red svelte-1gmtuxg");
-    			add_location(div, file, 304, 9, 6387);
+    			add_location(div, file, 310, 9, 6647);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -454,14 +454,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(304:36) ",
+    		source: "(310:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (302:36) 
+    // (308:36) 
     function create_if_block_4(ctx) {
     	let div;
 
@@ -469,7 +469,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full green svelte-1gmtuxg");
-    			add_location(div, file, 302, 9, 6305);
+    			add_location(div, file, 308, 9, 6565);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -483,14 +483,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(302:36) ",
+    		source: "(308:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (300:36) 
+    // (306:36) 
     function create_if_block_3(ctx) {
     	let div;
 
@@ -498,7 +498,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full purple svelte-1gmtuxg");
-    			add_location(div, file, 300, 9, 6222);
+    			add_location(div, file, 306, 9, 6482);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -512,14 +512,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(300:36) ",
+    		source: "(306:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (298:36) 
+    // (304:36) 
     function create_if_block_2(ctx) {
     	let div;
 
@@ -527,7 +527,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full yellow svelte-1gmtuxg");
-    			add_location(div, file, 298, 9, 6139);
+    			add_location(div, file, 304, 9, 6399);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -541,14 +541,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(298:36) ",
+    		source: "(304:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (296:8) {#if board[i][j] === 1}
+    // (302:8) {#if board[i][j] === 1}
     function create_if_block_1(ctx) {
     	let div;
 
@@ -556,7 +556,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell full cyan svelte-1gmtuxg");
-    			add_location(div, file, 296, 9, 6058);
+    			add_location(div, file, 302, 9, 6318);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -570,14 +570,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(296:8) {#if board[i][j] === 1}",
+    		source: "(302:8) {#if board[i][j] === 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (293:7) {#if board[i][j] === 0}
+    // (299:7) {#if board[i][j] === 0}
     function create_if_block(ctx) {
     	let div;
 
@@ -585,7 +585,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "cell empty  svelte-1gmtuxg");
-    			add_location(div, file, 293, 8, 5970);
+    			add_location(div, file, 299, 8, 6230);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -599,14 +599,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(293:7) {#if board[i][j] === 0}",
+    		source: "(299:7) {#if board[i][j] === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (292:5) {#each row as cell , j}
+    // (298:5) {#each row as cell , j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
 
@@ -657,18 +657,18 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(292:5) {#each row as cell , j}",
+    		source: "(298:5) {#each row as cell , j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:3) {#each board as row, i}
+    // (296:3) {#each board as row, i}
     function create_each_block(ctx) {
     	let div;
     	let t_1;
-    	let each_value_1 = /*row*/ ctx[31];
+    	let each_value_1 = /*row*/ ctx[32];
     	validate_each_argument(each_value_1);
     	let each_blocks = [];
 
@@ -686,7 +686,7 @@ var app = (function () {
 
     			t_1 = space();
     			attr_dev(div, "class", "row svelte-1gmtuxg");
-    			add_location(div, file, 290, 4, 5884);
+    			add_location(div, file, 296, 4, 6144);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -699,7 +699,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty[0] & /*board*/ 1) {
-    				each_value_1 = /*row*/ ctx[31];
+    				each_value_1 = /*row*/ ctx[32];
     				validate_each_argument(each_value_1);
     				let i;
 
@@ -732,7 +732,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(290:3) {#each board as row, i}",
+    		source: "(296:3) {#each board as row, i}",
     		ctx
     	});
 
@@ -777,14 +777,14 @@ var app = (function () {
     			}
 
     			attr_dev(h1, "class", "game-container svelte-1gmtuxg");
-    			add_location(h1, file, 285, 1, 5721);
+    			add_location(h1, file, 291, 1, 5981);
     			attr_dev(h3, "class", "game-container svelte-1gmtuxg");
-    			add_location(h3, file, 286, 1, 5768);
-    			add_location(div0, file, 288, 2, 5847);
+    			add_location(h3, file, 292, 1, 6028);
+    			add_location(div0, file, 294, 2, 6107);
     			attr_dev(div1, "class", "game-container svelte-1gmtuxg");
-    			add_location(div1, file, 287, 1, 5816);
+    			add_location(div1, file, 293, 1, 6076);
     			attr_dev(main, "class", "svelte-1gmtuxg");
-    			add_location(main, file, 284, 0, 5713);
+    			add_location(main, file, 290, 0, 5973);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -889,13 +889,15 @@ var app = (function () {
     	let board = [[]];
     	let staticBoard = [[]];
     	let score = 0;
-    	let tickSpeed = 250;
+    	let tickSpeed = 800;
     	let currentPos = [0, 4];
     	let round = 1;
+    	let pieceChosen = 0;
     	const pieces = [i, o, t, s, z, j, l];
 
     	function generatePiece() {
-    		return pieces[Math.floor(Math.random() * pieces.length)];
+    		pieceChosen = Math.floor(Math.random() * pieces.length);
+    		return pieces[pieceChosen];
     	}
 
     	let currentPiece = generatePiece();
@@ -951,12 +953,12 @@ var app = (function () {
     					continue;
     				}
 
-    				let newX = currentPos[0] + i + dx;
-    				let newY = currentPos[1] + j + dy;
+    				let potentialX = currentPos[0] + i + dx;
+    				let potentialY = currentPos[1] + j + dy;
 
-    				if (newX >= 20 || newY < 0 || newY > 9) {
+    				if (potentialX >= 20 || potentialY < 0 || potentialY > 9) {
     					return true;
-    				} else if (staticBoard[newX][newY] !== 0) {
+    				} else if (staticBoard[potentialX][potentialY] !== 0) {
     					return true;
     				}
     			}
@@ -981,6 +983,8 @@ var app = (function () {
     	}
 
     	function removeRows() {
+    		let rowNum = 0;
+
     		for (let i = 0; i < staticBoard.length; i++) {
     			let removeLine = true;
 
@@ -995,8 +999,12 @@ var app = (function () {
     				staticBoard.unshift([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
     				board.splice(i, 1);
     				board.unshift([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-    				$$invalidate(1, score += 10);
+    				rowNum++;
     			}
+    		}
+
+    		if (rowNum > 0) {
+    			$$invalidate(1, score += 100 * Math.pow(2, rowNum - 1));
     		}
     	}
 
@@ -1046,11 +1054,13 @@ var app = (function () {
     		let kickBack = 0;
 
     		if (collisionCheck(0, 0, rotatedPiece)) {
-    			kickBack = currentPos[1] > 5 ? 1 : -1;
+    			kickBack = currentPos[1] > 5 ? -1 : 1;
+    			kickBack = pieceChosen === 6 ? -2 : 2;
     		}
 
     		if (!collisionCheck(0, kickBack, rotatedPiece)) {
     			unDrawPiece(currentPos);
+    			currentPos[1] += kickBack;
     			currentPiece = rotatedPiece;
     			drawPiece(currentPos);
     		}
@@ -1101,6 +1111,7 @@ var app = (function () {
     				moveRight();
     				break;
     			case "ArrowDown":
+    				$$invalidate(1, score += 1);
     				moveDown();
     				break;
     			case "Enter":
@@ -1128,6 +1139,7 @@ var app = (function () {
     		tickSpeed,
     		currentPos,
     		round,
+    		pieceChosen,
     		pieces,
     		generateBoard,
     		generatePiece,
@@ -1162,6 +1174,7 @@ var app = (function () {
     		if ("tickSpeed" in $$props) tickSpeed = $$props.tickSpeed;
     		if ("currentPos" in $$props) currentPos = $$props.currentPos;
     		if ("round" in $$props) round = $$props.round;
+    		if ("pieceChosen" in $$props) pieceChosen = $$props.pieceChosen;
     		if ("currentPiece" in $$props) currentPiece = $$props.currentPiece;
     	};
 

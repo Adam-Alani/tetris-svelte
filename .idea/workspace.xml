@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e6a5b08-37a8-48fc-a149-cba7b8a5c336" name="Default Changelist" comment="" />
+    <list default="true" id="6e6a5b08-37a8-48fc-a149-cba7b8a5c336" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +46,8 @@
       <workItem from="1608508250162" duration="7533000" />
       <workItem from="1608546039738" duration="6203000" />
       <workItem from="1608570158307" duration="5865000" />
-      <workItem from="1608585733005" duration="13643000" />
+      <workItem from="1608585733005" duration="14279000" />
+      <workItem from="1608629983206" duration="3251000" />
     </task>
     <servers />
   </component>

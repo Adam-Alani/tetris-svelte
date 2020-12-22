@@ -9,7 +9,6 @@
 	                   four line (Tetris): 800
 	                   b2b Tetris's : 1200
 
-
 	Functions needed:
 	Random piece,
 	Remove full row, -> if its full, all the rows above it drop 1
@@ -69,9 +68,10 @@ import {onMount} from 'svelte';
 	let board = [[]];
 	let staticBoard = [[]];
 	let score = 0;
-	let tickSpeed = 250;
+	let tickSpeed = 800;
 	let currentPos = [0,4];
 	let round = 1;
+	let pieceChosen = 0
 	const pieces = [i , o , t , s , z , j , l]
 
 	function generateBoard(board , m , n) {
@@ -85,7 +85,8 @@ import {onMount} from 'svelte';
 	}
 
 	function generatePiece() {
-		return pieces[Math.floor(Math.random() * pieces.length)];
+		pieceChosen = Math.floor(Math.random() * pieces.length)
+		return pieces[pieceChosen];
 	}
 
 	let currentPiece = generatePiece();
@@ -132,13 +133,12 @@ import {onMount} from 'svelte';
 				if (piece[i][j] === 0) {
 					continue;
 				}
-
-				let newX = currentPos[0] + i + dx;
-				let newY = currentPos[1] + j + dy;
-				if (newX >= 20 || newY < 0 || newY > 9) {
+				let potentialX = currentPos[0] + i + dx;
+				let potentialY = currentPos[1] + j + dy;
+				if (potentialX >= 20 || potentialY < 0 || potentialY > 9) {
 					return true;
 				}
-				else if (staticBoard[newX][newY] !== 0) {
+				else if (staticBoard[potentialX][potentialY] !== 0) {
 					return true;
 				}
 
@@ -161,6 +161,7 @@ import {onMount} from 'svelte';
 	}
 
 	function removeRows() {
+		let rowNum = 0;
 		for (let i = 0 ; i < staticBoard.length ; i++) {
 			let removeLine = true;
 			for (let j = 0; j < staticBoard[i].length ; j++) {
@@ -171,9 +172,11 @@ import {onMount} from 'svelte';
 				staticBoard.unshift([0,0,0,0,0,0,0,0,0,0])
 				board.splice(i , 1);
 				board.unshift([0,0,0,0,0,0,0,0,0,0])
-				score += 10;
-
+				rowNum++;
 			}
+		}
+		if (rowNum > 0) {
+			score += (100*Math.pow(2, rowNum-1));
 		}
 	}
 	function gameIsOver() {
@@ -218,12 +221,14 @@ import {onMount} from 'svelte';
 	function rotate() {
 		let rotatedPiece = currentPiece[0].map((val, index) => currentPiece.map(row => row[index]).reverse())
 		let kickBack = 0;
-		if (collisionCheck(0,0, rotatedPiece)) {
-			kickBack = currentPos[1] > 5 ? 1 : -1;
 
+		if (collisionCheck(0,0, rotatedPiece)) {
+			kickBack = currentPos[1] > 5 ? -1 : 1;
+			kickBack = pieceChosen === 6 ? -2 : 2 ;
 		}
 		if (!collisionCheck(0 , kickBack , rotatedPiece )) {
 			unDrawPiece(currentPos, currentPiece);
+			currentPos[1] += kickBack;
 			currentPiece = rotatedPiece;
 			drawPiece(currentPos , currentPiece);
 
@@ -269,6 +274,7 @@ import {onMount} from 'svelte';
         moveRight();
         break;
       case 'ArrowDown':
+      	score += 1;
         moveDown();
         break;
       case 'Enter':

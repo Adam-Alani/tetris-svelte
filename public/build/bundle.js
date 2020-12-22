@@ -363,26 +363,56 @@ var app = (function () {
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[32] = list[i];
-    	child_ctx[7] = i;
+    	child_ctx[8] = i;
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
     	child_ctx[34] = list[i];
-    	child_ctx[8] = i;
+    	child_ctx[9] = i;
     	return child_ctx;
     }
 
-    // (314:36) 
+    // (307:2) {#if gameOver === true}
+    function create_if_block_8(ctx) {
+    	let h1;
+
+    	const block = {
+    		c: function create() {
+    			h1 = element("h1");
+    			h1.textContent = "You Lost";
+    			attr_dev(h1, "class", "end svelte-1ek56cz");
+    			add_location(h1, file, 307, 3, 6389);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_8.name,
+    		type: "if",
+    		source: "(307:2) {#if gameOver === true}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (329:36) 
     function create_if_block_7(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full orange svelte-1gmtuxg");
-    			add_location(div, file, 314, 9, 6808);
+    			attr_dev(div, "class", "cell full orange svelte-1ek56cz");
+    			add_location(div, file, 329, 9, 7130);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -396,22 +426,22 @@ var app = (function () {
     		block,
     		id: create_if_block_7.name,
     		type: "if",
-    		source: "(314:36) ",
+    		source: "(329:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (312:36) 
+    // (327:36) 
     function create_if_block_6(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full blue svelte-1gmtuxg");
-    			add_location(div, file, 312, 9, 6727);
+    			attr_dev(div, "class", "cell full blue svelte-1ek56cz");
+    			add_location(div, file, 327, 9, 7049);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -425,22 +455,22 @@ var app = (function () {
     		block,
     		id: create_if_block_6.name,
     		type: "if",
-    		source: "(312:36) ",
+    		source: "(327:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (310:36) 
+    // (325:36) 
     function create_if_block_5(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full red svelte-1gmtuxg");
-    			add_location(div, file, 310, 9, 6647);
+    			attr_dev(div, "class", "cell full red svelte-1ek56cz");
+    			add_location(div, file, 325, 9, 6969);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -454,22 +484,22 @@ var app = (function () {
     		block,
     		id: create_if_block_5.name,
     		type: "if",
-    		source: "(310:36) ",
+    		source: "(325:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (308:36) 
+    // (323:36) 
     function create_if_block_4(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full green svelte-1gmtuxg");
-    			add_location(div, file, 308, 9, 6565);
+    			attr_dev(div, "class", "cell full green svelte-1ek56cz");
+    			add_location(div, file, 323, 9, 6887);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -483,22 +513,22 @@ var app = (function () {
     		block,
     		id: create_if_block_4.name,
     		type: "if",
-    		source: "(308:36) ",
+    		source: "(323:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:36) 
+    // (321:36) 
     function create_if_block_3(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full purple svelte-1gmtuxg");
-    			add_location(div, file, 306, 9, 6482);
+    			attr_dev(div, "class", "cell full purple svelte-1ek56cz");
+    			add_location(div, file, 321, 9, 6804);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -512,22 +542,22 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(306:36) ",
+    		source: "(321:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (304:36) 
+    // (319:36) 
     function create_if_block_2(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full yellow svelte-1gmtuxg");
-    			add_location(div, file, 304, 9, 6399);
+    			attr_dev(div, "class", "cell full yellow svelte-1ek56cz");
+    			add_location(div, file, 319, 9, 6721);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -541,22 +571,22 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(304:36) ",
+    		source: "(319:36) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (302:8) {#if board[i][j] === 1}
+    // (317:8) {#if board[i][j] === 1}
     function create_if_block_1(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell full cyan svelte-1gmtuxg");
-    			add_location(div, file, 302, 9, 6318);
+    			attr_dev(div, "class", "cell full cyan svelte-1ek56cz");
+    			add_location(div, file, 317, 9, 6640);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -570,22 +600,22 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(302:8) {#if board[i][j] === 1}",
+    		source: "(317:8) {#if board[i][j] === 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (299:7) {#if board[i][j] === 0}
+    // (314:7) {#if board[i][j] === 0}
     function create_if_block(ctx) {
     	let div;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "cell empty  svelte-1gmtuxg");
-    			add_location(div, file, 299, 8, 6230);
+    			attr_dev(div, "class", "cell empty  svelte-1ek56cz");
+    			add_location(div, file, 314, 8, 6552);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -599,26 +629,26 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(299:7) {#if board[i][j] === 0}",
+    		source: "(314:7) {#if board[i][j] === 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (298:5) {#each row as cell , j}
+    // (313:5) {#each row as cell , j}
     function create_each_block_1(ctx) {
     	let if_block_anchor;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 0) return create_if_block;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 1) return create_if_block_1;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 2) return create_if_block_2;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 3) return create_if_block_3;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 4) return create_if_block_4;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 5) return create_if_block_5;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 6) return create_if_block_6;
-    		if (/*board*/ ctx[0][/*i*/ ctx[7]][/*j*/ ctx[8]] === 7) return create_if_block_7;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 0) return create_if_block;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 1) return create_if_block_1;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 2) return create_if_block_2;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 3) return create_if_block_3;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 4) return create_if_block_4;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 5) return create_if_block_5;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 6) return create_if_block_6;
+    		if (/*board*/ ctx[1][/*i*/ ctx[8]][/*j*/ ctx[9]] === 7) return create_if_block_7;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -657,14 +687,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(298:5) {#each row as cell , j}",
+    		source: "(313:5) {#each row as cell , j}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (296:3) {#each board as row, i}
+    // (311:3) {#each board as row, i}
     function create_each_block(ctx) {
     	let div;
     	let t_1;
@@ -685,8 +715,8 @@ var app = (function () {
     			}
 
     			t_1 = space();
-    			attr_dev(div, "class", "row svelte-1gmtuxg");
-    			add_location(div, file, 296, 4, 6144);
+    			attr_dev(div, "class", "row svelte-1ek56cz");
+    			add_location(div, file, 311, 4, 6466);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -698,7 +728,7 @@ var app = (function () {
     			append_dev(div, t_1);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*board*/ 1) {
+    			if (dirty[0] & /*board*/ 2) {
     				each_value_1 = /*row*/ ctx[32];
     				validate_each_argument(each_value_1);
     				let i;
@@ -732,7 +762,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(296:3) {#each board as row, i}",
+    		source: "(311:3) {#each board as row, i}",
     		ctx
     	});
 
@@ -748,10 +778,12 @@ var app = (function () {
     	let t3;
     	let t4;
     	let div1;
+    	let t5;
     	let div0;
     	let mounted;
     	let dispose;
-    	let each_value = /*board*/ ctx[0];
+    	let if_block = /*gameOver*/ ctx[0] === true && create_if_block_8(ctx);
+    	let each_value = /*board*/ ctx[1];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -767,24 +799,26 @@ var app = (function () {
     			t1 = space();
     			h3 = element("h3");
     			t2 = text("Score: ");
-    			t3 = text(/*score*/ ctx[1]);
+    			t3 = text(/*score*/ ctx[2]);
     			t4 = space();
     			div1 = element("div");
+    			if (if_block) if_block.c();
+    			t5 = space();
     			div0 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(h1, "class", "game-container svelte-1gmtuxg");
-    			add_location(h1, file, 291, 1, 5981);
-    			attr_dev(h3, "class", "game-container svelte-1gmtuxg");
-    			add_location(h3, file, 292, 1, 6028);
-    			add_location(div0, file, 294, 2, 6107);
-    			attr_dev(div1, "class", "game-container svelte-1gmtuxg");
-    			add_location(div1, file, 293, 1, 6076);
-    			attr_dev(main, "class", "svelte-1gmtuxg");
-    			add_location(main, file, 290, 0, 5973);
+    			attr_dev(h1, "class", "game-container svelte-1ek56cz");
+    			add_location(h1, file, 303, 1, 6236);
+    			attr_dev(h3, "class", "game-container svelte-1ek56cz");
+    			add_location(h3, file, 304, 1, 6283);
+    			add_location(div0, file, 309, 2, 6429);
+    			attr_dev(div1, "class", "game-container svelte-1ek56cz");
+    			add_location(div1, file, 305, 1, 6331);
+    			attr_dev(main, "class", "svelte-1ek56cz");
+    			add_location(main, file, 302, 0, 6228);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -798,6 +832,8 @@ var app = (function () {
     			append_dev(h3, t3);
     			append_dev(main, t4);
     			append_dev(main, div1);
+    			if (if_block) if_block.m(div1, null);
+    			append_dev(div1, t5);
     			append_dev(div1, div0);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -805,15 +841,26 @@ var app = (function () {
     			}
 
     			if (!mounted) {
-    				dispose = listen_dev(window, "keydown", /*keydown_handler*/ ctx[9], false, false, false);
+    				dispose = listen_dev(window, "keydown", /*keydown_handler*/ ctx[10], false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty[0] & /*score*/ 2) set_data_dev(t3, /*score*/ ctx[1]);
+    			if (dirty[0] & /*score*/ 4) set_data_dev(t3, /*score*/ ctx[2]);
 
-    			if (dirty[0] & /*board*/ 1) {
-    				each_value = /*board*/ ctx[0];
+    			if (/*gameOver*/ ctx[0] === true) {
+    				if (if_block) ; else {
+    					if_block = create_if_block_8(ctx);
+    					if_block.c();
+    					if_block.m(div1, t5);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+
+    			if (dirty[0] & /*board*/ 2) {
+    				each_value = /*board*/ ctx[1];
     				validate_each_argument(each_value);
     				let i;
 
@@ -840,6 +887,7 @@ var app = (function () {
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
+    			if (if_block) if_block.d();
     			destroy_each(each_blocks, detaching);
     			mounted = false;
     			dispose();
@@ -908,7 +956,7 @@ var app = (function () {
     		for (let i = 0; i < staticBoard.length; i++) {
     			for (let j = 0; j < staticBoard[i].length; j++) {
     				if (staticBoard[i][j] !== 0) {
-    					$$invalidate(0, board[i][j] = staticBoard[i][j], board);
+    					$$invalidate(1, board[i][j] = staticBoard[i][j], board);
     				}
     			}
     		}
@@ -922,7 +970,7 @@ var app = (function () {
     		for (let i = 0; i < currentPiece.length; i++) {
     			for (let j = 0; j < currentPiece[i].length; j++) {
     				if (currentPiece[i][j] !== 0) {
-    					$$invalidate(0, board[x + i][y + j] = currentPiece[i][j], board);
+    					$$invalidate(1, board[x + i][y + j] = currentPiece[i][j], board);
     				}
     			}
     		}
@@ -939,7 +987,7 @@ var app = (function () {
     					continue;
     				}
 
-    				$$invalidate(0, board[x + i][y + j] = 0, board);
+    				$$invalidate(1, board[x + i][y + j] = 0, board);
     			}
     		}
 
@@ -1004,7 +1052,7 @@ var app = (function () {
     		}
 
     		if (rowNum > 0) {
-    			$$invalidate(1, score += 100 * Math.pow(2, rowNum - 1));
+    			$$invalidate(2, score += 100 * Math.pow(2, rowNum - 1));
     		}
     	}
 
@@ -1012,7 +1060,7 @@ var app = (function () {
     		for (let i = 0; i < staticBoard.length; i++) {
     			for (let j = 0; j < staticBoard[i].length; j++) {
     				if (staticBoard[0][4] !== 0) {
-    					gameOver = true;
+    					$$invalidate(0, gameOver = true);
     				}
     			}
     		}
@@ -1066,34 +1114,41 @@ var app = (function () {
     		}
     	}
 
-    	function play() {
+    	function play(tickSpeed) {
     		setTimeout(
     			() => {
-    				gameIsOver();
-
-    				if (gameOver) {
-    					return;
+    				//gameIsOver();
+    				for (let i = 0; i < staticBoard.length; i++) {
+    					for (let j = 0; j < staticBoard[i].length; j++) {
+    						if (staticBoard[0][4] !== 0) {
+    							$$invalidate(0, gameOver = true);
+    						}
+    					}
     				}
 
-    				moveDown();
-    				play();
+    				if (!gameOver) {
+    					moveDown();
+    					play(tickSpeed);
+    				}
     			},
-    			tickSpeed - Math.log2(round) * 20
+    			tickSpeed
     		);
     	}
 
     	onMount(() => {
-    		play();
+    		play(800);
     	});
 
     	function newGame() {
-    		gameOver = false;
-    		$$invalidate(1, score = 0);
+    		$$invalidate(0, gameOver = false);
+    		$$invalidate(2, score = 0);
+    		tickSpeed = 800;
     		currentPos = [0, 4];
-    		$$invalidate(0, board = generateBoard(board, 10, 20));
+    		$$invalidate(1, board = [[]]);
+    		staticBoard = [[]];
+    		$$invalidate(1, board = generateBoard(board, 10, 20));
     		staticBoard = generateBoard(staticBoard, 10, 20);
     		currentPiece = generatePiece();
-    		play();
     	}
 
     	const writable_props = [];
@@ -1111,13 +1166,16 @@ var app = (function () {
     				moveRight();
     				break;
     			case "ArrowDown":
-    				$$invalidate(1, score += 1);
+    				$$invalidate(2, score += 1);
     				moveDown();
     				break;
     			case "Enter":
     				newGame();
     				break;
     			case "r":
+    				rotate();
+    				break;
+    			case "ArrowUp":
     				rotate();
     				break;
     		}
@@ -1160,17 +1218,17 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ("i" in $$props) $$invalidate(7, i = $$props.i);
+    		if ("i" in $$props) $$invalidate(8, i = $$props.i);
     		if ("o" in $$props) o = $$props.o;
     		if ("t" in $$props) t = $$props.t;
     		if ("s" in $$props) s = $$props.s;
     		if ("z" in $$props) z = $$props.z;
-    		if ("j" in $$props) $$invalidate(8, j = $$props.j);
+    		if ("j" in $$props) $$invalidate(9, j = $$props.j);
     		if ("l" in $$props) l = $$props.l;
-    		if ("gameOver" in $$props) gameOver = $$props.gameOver;
-    		if ("board" in $$props) $$invalidate(0, board = $$props.board);
+    		if ("gameOver" in $$props) $$invalidate(0, gameOver = $$props.gameOver);
+    		if ("board" in $$props) $$invalidate(1, board = $$props.board);
     		if ("staticBoard" in $$props) staticBoard = $$props.staticBoard;
-    		if ("score" in $$props) $$invalidate(1, score = $$props.score);
+    		if ("score" in $$props) $$invalidate(2, score = $$props.score);
     		if ("tickSpeed" in $$props) tickSpeed = $$props.tickSpeed;
     		if ("currentPos" in $$props) currentPos = $$props.currentPos;
     		if ("round" in $$props) round = $$props.round;
@@ -1183,6 +1241,7 @@ var app = (function () {
     	}
 
     	return [
+    		gameOver,
     		board,
     		score,
     		moveDown,

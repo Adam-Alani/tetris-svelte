@@ -235,30 +235,39 @@ import {onMount} from 'svelte';
 		}
 	}
 
-	function play() {
+	function play(tickSpeed) {
 		setTimeout(() => {
-			gameIsOver();
-			if (gameOver) {
-				return;
+			//gameIsOver();
+			for (let i = 0; i < staticBoard.length; i++) {
+				for (let j = 0; j < staticBoard[i].length; j++) {
+					if (staticBoard[0][4] !== 0) {
+						gameOver = true;
+					}
+				}
 			}
-			moveDown();
-			play();
+			if (!gameOver) {
+				moveDown();
+				play(tickSpeed);
+			}
 
-		} , tickSpeed - Math.log2(round)*20)
+		} , tickSpeed )
 	}
+	onMount(() =>{
+		play(800);
+	})
 
-	onMount(() => {
-		play(tickSpeed);
-	});
 
 	function newGame() {
 		gameOver = false;
 		score = 0;
+		tickSpeed = 800;
 		currentPos = [0, 4];
+		board = [[]];
+		staticBoard = [[]];
 		board = generateBoard(board , 10 , 20);
 		staticBoard = generateBoard(staticBoard , 10 , 20);
 		currentPiece = generatePiece();
-		play(tickSpeed);
+
 	}
 
 
@@ -283,6 +292,9 @@ import {onMount} from 'svelte';
       case 'r':
       	rotate();
       	break;
+      case 'ArrowUp':
+      	rotate();
+      	break;
     }
   }}/>
 
@@ -292,6 +304,9 @@ import {onMount} from 'svelte';
 	<h1 class="game-container">Shitty Tetris</h1>
 	<h3 class="game-container">Score: {score}</h3>
 	<div class="game-container">
+		{#if gameOver === true}
+			<h1 class="end">You Lost</h1>
+		{/if}
 		<div>
 			{#each board as row, i}
 				<div class="row">
@@ -330,6 +345,14 @@ import {onMount} from 'svelte';
 		font-weight: 600;
 	}
 
+	.end {
+		position: absolute;
+		z-index: 1000;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50% , -25%);
+		-webkit-transform: translate(-50%, -25%);
+	}
 
 	.game-container {
 		position: relative;

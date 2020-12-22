@@ -284,7 +284,7 @@ import {onMount} from 'svelte';
 
 <main>
 	<h1 class="game-container">Shitty Tetris</h1>
-	<h3 class="game-container">Score: {gameOver}</h3>
+	<h3 class="game-container">Score: {score}</h3>
 	<div class="game-container">
 		<div>
 			{#each board as row, i}
